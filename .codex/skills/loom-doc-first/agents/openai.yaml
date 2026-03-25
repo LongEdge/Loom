@@ -1,0 +1,4 @@
+interface:
+  display_name: "Loom Doc First"
+  short_description: "Enforce versioned DOCUMENTS sync for Loom changes"
+  default_prompt: "Use $loom-doc-first to apply Loom's documentation-first workflow for this task."

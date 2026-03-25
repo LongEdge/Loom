@@ -1,0 +1,4 @@
+interface:
+  display_name: "T8 Doc Tree Comment Guardrail"
+  short_description: "Require per-folder comments in t8 document trees"
+  default_prompt: "Use $t8-doc-tree-comment-guardrail to enforce folder-by-folder comments for this t8 documentation tree."
