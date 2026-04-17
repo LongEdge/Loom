@@ -87,6 +87,19 @@ Before final response, confirm all applicable checks:
 - core change: documentation updated in versioned docs path
 - response includes `doc path + summary + impact points` when docs changed
 
+### 6) v0.1 recommendation note (non-blocking)
+
+When `current_version = v0.1` and the task involves architecture decisions under `DOCUMENTS/v0.1`:
+
+- Prefer checking `DOCUMENTS/v0.1/建议.md` first, if the file exists.
+- Treat `DOCUMENTS/v0.1/建议.md` as the single source of truth for recommendation content.
+- Keep this skill at reference/guardrail level; do not duplicate or maintain detailed recommendation body here.
+- Treat entries in `建议.md` as **recommended practices**, not hard constraints.
+- If a recommendation conflicts with real constraints, it may be skipped; add a brief reason in related docs when applicable.
+- Do not mark task completion as blocked solely because a recommendation in `建议.md` was not followed.
+
+This note does not replace mandatory documentation sync rules for core changes in Step 4.
+
 ## Output Contract
 
 When this skill is active, report these fields in the final summary:
